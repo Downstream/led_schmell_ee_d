@@ -1,0 +1,109 @@
+<interface>
+
+	<layout name="root_layout"
+			layout_type="vert"
+			overall_alignment="center"
+		>
+		
+		<sprite name="background"
+			color="black"
+			opacity="1.0"
+			blend_mode="normal"
+			layout_size_mode="fill"
+			animate_on="fade; ease:outQuint; slide:200, 0; duration:0.6"
+			/>
+		
+		<layout name="text_holder"
+				overall_alignment="center"
+				layout_size_mode="stretch"
+				layout_type="vert"
+				>
+			<layout name="text_layout"
+					layout_type="vert"
+					layout_spacing="0"
+					layout_size_mode="flex"
+					shrink_to_children="both"
+					layout_h_align="center"
+					>
+				
+				<layout layout_type="horiz"
+					shrink_to_children="both"
+					layout_h_align="center"
+					>
+					<layout name="weather_icon_holder"
+						layout_type="vert"
+						layout_size_mode="fixed"
+						size="200, 200"
+						pad_all="10"
+						layout_h_align="center"
+						>
+						<image name="weather_icon"
+							layout_size_mode="stretch"
+							center="0.5, 0.5"
+							layout_h_align="center"
+							layout_fudge="0, 15"
+							animate_on="grow; ease:outQuint; duration:0.6"
+							/>
+						<text name="now_status"
+							font="now:status"
+							font_size="22"
+							text_align="center"
+							resize_limit="200"
+							layout_h_align="center"
+							layout_fudge="0, -15"
+							animate_on="fade; ease:outQuint; slide:0, 20; duration:0.6"
+							/>
+					</layout>
+					<layout name="now_layout"
+						l_pad="10"
+						layout_size_mode="flex"
+						shrink_to_children="both"
+						layout_v_align="middle"
+						layout_type="vert"
+						>
+						<text name="now_temp"
+							font="now:temp"
+							font_size="88"
+							animate_on="fade; ease:outQuint; slide:200, 0; duration:0.6"
+							/>
+							<!--
+							-->
+					</layout>
+				</layout>
+				<layout 
+					layout_type="horiz"
+					layout_spacing="20"
+					shrink_to_children="both"
+					layout_h_align="center"
+					>							
+					<text name="labels_text"
+						font="label:text"
+						text_align="right"						
+						animate_on="fade; ease:outQuint; slide:200, 0; duration:0.6"
+						/>
+					<text name="content_text"
+						font="content:text"
+						animate_on="fade; ease:outQuint; slide:200, 0; duration:0.6"
+						/>
+				</layout>
+				<text name="location_text"
+					font="location:text"
+					text="Portland, OR"
+					layout_size_mode="flex"
+					animate_on="fade; ease:outQuint; slide:200, 0; duration:0.6"
+					layout_h_align="center"
+
+					/>
+				<text name="update_time"
+					font="updated:text"
+					layout_size_mode="flex"
+					animate_on="fade; ease:outQuint; slide:200, 0; duration:0.6"
+					layout_h_align="center"
+					/>
+			</layout>
+		</layout>
+	</layout>
+
+
+</interface>
+

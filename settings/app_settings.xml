@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<setting name="wunderground:city" value="OR/Portland" />
+	<setting name="wunderground:api_key" value="your_api_key_here" />
+</settings>
+
+
